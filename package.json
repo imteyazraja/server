@@ -1,0 +1,35 @@
+{
+  "name": "genio-budget-api",
+  "version": "1.0.0",
+  "description": "Genio Budget API",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix '../'",
+    "client-install": "npm install --prefix '../'",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "Imteyaz Raja",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^4.0.1",
+    "nodemon": "^1.18.4"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.3",
+    "errno": "^0.1.7",
+    "express": "^4.16.3",
+    "jsonwebtoken": "^8.3.0",
+    "moment": "^2.22.2",
+    "mongoose": "^5.3.2",
+    "morgan": "^1.9.1",
+    "mysql": "^2.16.0",
+    "passport": "^0.4.0",
+    "passport-jwt": "^4.0.0",
+    "util": "^0.11.0",
+    "validator": "^10.8.0",
+    "winston": "^3.1.0"
+  }
+}
